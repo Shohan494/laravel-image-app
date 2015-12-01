@@ -1,16 +1,36 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+  return View::make('pages.upload');
 });
+
+Route::post('uploadimage', 'ApplyController@upload');
+
+Route::get("options", "ApplyController@options");
+
+Route::get('gray', function(){
+  $img = Image::make(public_path('uploads/theimage.jpg'))->greyscale();
+  $img->save((public_path('uploads/theimage.jpg')));
+  return Redirect::to("options");
+});
+
+Route::get('mirror', function(){
+  $img = Image::make(public_path('uploads/theimage.jpg'))->flip("h");
+   $img->save((public_path('uploads/theimage.jpg')));
+  return Redirect::to("options");
+});
+
+Route::get('blue', function(){
+  $img = Image::make(public_path('uploads/theimage.jpg'))->colorize(-100, 0, 100);
+   $img->save((public_path('uploads/theimage.jpg')));
+  return Redirect::to("options");
+});
+
+Route::get('combo', function(){
+  $img = Image::make(public_path('uploads/theimage.jpg'))->greyscale()->flip("h")->colorize(-100, 0, 100);
+   $img->save((public_path('uploads/theimage.jpg')));
+  return Redirect::to("options");
+});
+
+Route::get('download', 'ApplyController@downloadImage');
+
