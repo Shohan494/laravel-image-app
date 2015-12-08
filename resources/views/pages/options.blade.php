@@ -42,18 +42,6 @@
                 <li>
                     <div id="MainMenu">
                       <div class="list-group panel">
-                        <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Blur Effect</a>
-                        <div class="collapse" id="demo4">
-                          <a href="showblur" class="list-group-item">Show Me</a>
-                          <a href="saveblur" class="list-group-item">Save with Blur</a>
-                        </div>
-                      </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div id="MainMenu">
-                      <div class="list-group panel">
                         <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Brightness Effect</a>
                         <div class="collapse" id="demo3">
                           <a href="showbright" class="list-group-item">Show Me</a>
@@ -170,6 +158,19 @@
                       </div>
                     </div>
                 </li>
+
+                <li>
+                    <div id="MainMenu">
+                      <div class="list-group panel">
+                        <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Blur Effect</a>
+                        <div class="collapse" id="demo4">
+                          <a href="showblur" class="list-group-item">Show Me</a>
+                          <a href="saveblur" class="list-group-item">Save with Blur</a>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+                
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->

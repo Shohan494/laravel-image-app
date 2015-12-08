@@ -25,7 +25,7 @@ Route::get('showbright', function(){
 });
 
 Route::get('savebright', function(){
-  $img = Image::make(public_path('uploads/theimage.jpg'))->blur(100);
+  $img = Image::make(public_path('uploads/theimage.jpg'))->brightness(25);
   $img->save((public_path('uploads/theimage.jpg')));
   return Redirect::to("options");
 });
@@ -36,7 +36,7 @@ Route::get('showdark', function(){
 });
 
 Route::get('savedark', function(){
-  $img = Image::make(public_path('uploads/theimage.jpg'))->dark(-50);
+  $img = Image::make(public_path('uploads/theimage.jpg'))->brightness(-50);
   $img->save((public_path('uploads/theimage.jpg')));
   return Redirect::to("options");
 });
