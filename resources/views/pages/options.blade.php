@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Laravel 5 Image Application</title>
 
     <!-- Bootstrap Core CSS -->
     <link href={{url("css/bootstrap.min.css")}} rel="stylesheet">
