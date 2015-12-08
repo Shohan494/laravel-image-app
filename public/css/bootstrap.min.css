@@ -2584,7 +2584,7 @@ select.input-lg[multiple], textarea.input-lg {
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.42857;
     margin-bottom: 0;
     padding: 6px 12px;
@@ -4386,7 +4386,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     padding-left: 0;
 }
 .list-group-item {
-    background-color: #fff;
+    background-color: #f0f0f0;
     display: block;
     margin-bottom: -1px;
     position: relative;
