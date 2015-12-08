@@ -5,7 +5,7 @@ This application is build on <a href="http://www.laravel.com">Laravel php framew
 
 # What you can do with this application
 
-You can Upload, Edit with different functionalities with  a live view and Download your image.
+You can Upload, Edit with different functionalities with a live view and Download your image.
 
 # Note
-This application is under development, much more functionalities will be added in future.
+This application is under development. But the main functionalities are added and you can have a live version of this app at https://laravelimageapp.herokuapp.com 
